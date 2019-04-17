@@ -1,0 +1,11 @@
+header { 
+    background: linear-gradient(#04519b, #044687 60%, #033769);
+    color: #fff;
+    min-height: 100px; 
+    padding-top: 15px;
+}
+
+.bg-color{
+    background: linear-gradient(#04519b, #044687 60%, #033769);
+    color: #fff;
+}

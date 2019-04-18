@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Members: Dobble Social Network</title>
+
+    <!-- CDNs -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- LOCAL STYLESHEETs -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <img style="width: 370px;" src="img/logo.png" alt="Dobble Logo" class="logo float-md-left">
+            <form>
+                   
+                    <div class="form-row d-block d-md-flex align-items-center">
+
+                        <div class="col-12 col-sm-12 col-md-3 offset-md-3 offset-lg-4 mt-2 mb-3 mt-md-0 mb-md-0">
+                            
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text d-md-none d-lg-block">@</div>
+                                </div><!-- end input-group-prepend -->
+                                <input type="email" class="rounded form-control" placeholder="E-mail">
+                            </div><!-- end input-group -->
+
+                        </div><!-- end col-sm-3 my-1 -->
+
+                      <div class="col-sm-12 col-md-3">
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div><!-- end col-sm-3 my-1 -->
+                      
+                      <div class="col-auto text-center mt-2 mt-sm-3 mt-md-0">
+                        <button type="submit" class="btn btn-success">Log in</button>
+                      </div><!-- end col-auto my-1 -->
+
+                      <div class="col-auto col-sm-6 my-2 offset-md-3 offset-lg-4 pb-2 pb-md-0">
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="rememberMeCheckbox">
+                              <label class="form-check-label" for="rememberMeCheckbox">
+                                Remember me
+                              </label>
+                            </div><!-- end form-check -->
+    
+                          </div><!-- end col-auto my-1 -->
+
+                    </div><!-- end form-row align-items-center -->
+                  </form>
+        </div><!-- end container -->
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Dobble</a>
+
+            <!-- HAMBURGER MENU FOR MOBILE PHONES -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button><!-- end "navbar-toggler -->
+            
+            <div class="collapse navbar-collapse" id="main-menu">
+
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="members.html">Members</a>
+                <a class="nav-item nav-link" href="groups.html">Groups</a>
+                <a class="nav-item nav-link" href="photos.html">Photos</a>
+                <a class="nav-item nav-link" href="profile.html">Profile</a>
+              </div><!-- end navbar-nav -->
+              
+            </div><!-- end collapse navbar-collapse -->
+        </nav>
+
+        <!-- MAIN SECTION -->
+        <section>
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-8 mt-4">
+                        <div class="members">
+                            <h1 class="pb-2 border-bottom text-center text-md-left">Members</h1>
+                            
+                            <div class="row member-row border-bottom mb-4 text-center">
+                                <div class="col-md-3 mt-2">
+                                    <img src="img/user.png" alt="User image" class="img-thumbnail">
+                                    <div class="text-center mb-2 mt-2">SomeUser01</div>
+                                </div><!-- end col-md-3 -->
+
+                                <div class="col-md-3 align-self-center">
+                                    <p>
+                                        <a href="#" class="btn btn-success btn-block">
+                                        <i class="fa fa-users"></i> Add Friend</a>
+                                    </p>
+                                </div><!-- end col-md-3 align-self-center -->
+                                   
+                                <div class="col-md-3 align-self-center">
+                                    <p>
+                                            <a href="#" class="btn btn-light btn-block">
+                                            <i class="fa fa-envelope"></i> Send message</a>
+                                    </p>
+                                </div><!-- end col-md-3 align-self-center -->
+
+                                <div class="col-md-3 align-self-center">
+                                        <p>
+                                                <a href="#" class="btn btn-primary btn-block">
+                                                <i class="fa fa-edit"></i> View Profile</a>
+                                        </p>
+                                </div><!-- end col-md-3 align-self-center -->
+
+                            </div><!-- end row member-row border-bottom mb-4 text-center -->
+
+                            <!-- SECOND MEMBER -->
+                            <div class="row member-row border-bottom mb-4 text-center">
+                                    <div class="col-md-3">
+                                        <img src="img/user.png" alt="User image" class="img-thumbnail">
+                                        <div class="text-center mb-2 mt-2">SomeUser02</div>
+                                    </div><!-- end col-md-3 -->
+    
+                                    <div class="col-md-3 align-self-center">
+                                        <p>
+                                            <a href="#" class="btn btn-success btn-block">
+                                            <i class="fa fa-users"></i> Add Friend</a>
+                                        </p>
+                                    </div><!-- end col-md-3 align-self-center -->
+                                       
+                                    <div class="col-md-3 align-self-center">
+                                        <p>
+                                                <a href="#" class="btn btn-light btn-block">
+                                                <i class="fa fa-envelope"></i> Send message</a>
+                                        </p>
+                                    </div><!-- end col-md-3 align-self-center -->
+    
+                                    <div class="col-md-3 align-self-center">
+                                            <p>
+                                                    <a href="#" class="btn btn-primary btn-block">
+                                                    <i class="fa fa-edit"></i> View Profile</a>
+                                            </p>
+                                    </div><!-- end col-md-3 align-self-center -->
+    
+                                </div><!-- end row member-row border-bottom mb-4 text-center -->
+
+                                <!-- THIRD MEMBER -->
+                                <div class="row member-row border-bottom mb-4 text-center">
+                                        <div class="col-md-3">
+                                            <img src="img/user.png" alt="User image" class="img-thumbnail">
+                                            <div class="text-center mb-2 mt-2">SomeUser03</div>
+                                        </div><!-- end col-md-3 -->
+        
+                                        <div class="col-md-3 align-self-center">
+                                            <p>
+                                                <a href="#" class="btn btn-success btn-block">
+                                                <i class="fa fa-users"></i> Add Friend</a>
+                                            </p>
+                                        </div><!-- end col-md-3 align-self-center -->
+                                           
+                                        <div class="col-md-3 align-self-center">
+                                            <p>
+                                                    <a href="#" class="btn btn-light btn-block">
+                                                    <i class="fa fa-envelope"></i> Send message</a>
+                                            </p>
+                                        </div><!-- end col-md-3 align-self-center -->
+        
+                                        <div class="col-md-3 align-self-center">
+                                                <p>
+                                                        <a href="#" class="btn btn-primary btn-block">
+                                                        <i class="fa fa-edit"></i> View Profile</a>
+                                                </p>
+                                        </div><!-- end col-md-3 align-self-center -->
+        
+                                    </div><!-- end row member-row border-bottom mb-4 text-center -->
+
+                                    <!-- FOURTH MEMBER -->
+                                    <div class="row member-row text-center">
+                                            <div class="col-md-3">
+                                                <img src="img/user.png" alt="User image" class="img-thumbnail">
+                                                <div class="text-center mt-2 mb-2">SomeUser04</div>
+                                            </div><!-- end col-md-3 -->
+            
+                                            <div class="col-md-3 align-self-center">
+                                                <p>
+                                                    <a href="#" class="btn btn-success btn-block">
+                                                    <i class="fa fa-users"></i> Add Friend</a>
+                                                </p>
+                                            </div><!-- end col-md-3 align-self-center -->
+                                               
+                                            <div class="col-md-3 align-self-center">
+                                                <p>
+                                                        <a href="#" class="btn btn-light btn-block">
+                                                        <i class="fa fa-envelope"></i> Send message</a>
+                                                </p>
+                                            </div><!-- end col-md-3 align-self-center -->
+            
+                                            <div class="col-md-3 align-self-center">
+                                                    <p>
+                                                            <a href="#" class="btn btn-primary btn-block">
+                                                            <i class="fa fa-edit"></i> View Profile</a>
+                                                    </p>
+                                            </div><!-- end col-md-3 align-self-center -->
+                                        </div><!-- end row member-row text-center -->
+                            
+                        </div><!-- end members -->
+                    </div><!-- end col-md-8 -->
+
+                    <div class="col-md-4">
+                        <div class="card friends mt-4">
+                                <div class="card-header h5 bg-color"> My Friends</div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <ul class="mx-auto justify-content-center quit-padding-left">
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="d-block d-md-inline-block list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+                                        </ul><!-- end list-inline -->
+         
+                                </div><!-- end d-flex -->
+                               
+                                <!-- THIS IS TO ALIGN THE BUTTON IN THE MIDDLE OF THE COLUMN -->
+                                <div class="row">
+                                    <div class="col-9 offset-2 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all friends</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+                                
+                                </div><!-- end card-body -->
+                        </div><!-- end card friends mt-4 -->
+
+                        <div class="card groups mt-4">
+                                <div class="card-header h5 bg-color">Latest Groups</div>
+                                <div class="card-body">
+                                    <!-- IMAGES WILL HAVE INLINE STYLES AS IT DOESNT WORK THROUGH STYLES.CSS -->
+                                    <div class="group-item pb-3 border-bottom">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group One</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end group-item pb-3 border-bottom -->
+                                  
+                                    <div class="group-item border-bottom pt-3 pb-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Two</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end "group-item border-bottom pt-3 pb-3 -->
+
+                                    <div class="group-item pt-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Three</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end group-item pt-3 -->
+                                    <!-- TO CENTER BUTTON -->
+                                <div class="row">
+                                    <div class="col-10 offset-2 offset-sm-0 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all Groups</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+
+                                </div><!-- end card-body -->
+
+                        </div><!-- end card groups mt-4 -->
+                    </div><!-- end col-md-4 -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <p>Dobble Copyright &copy; 2019, All Rights Reserved.</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

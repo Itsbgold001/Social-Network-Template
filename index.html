@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dobble Social Network</title>
 
+    <!-- CDNs -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- LOCAL STYLESHEETs -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -13,12 +18,12 @@
     <!-- HEADER -->
     <header>
         <div class="container-fluid">
-            <img src="img/logo.png" alt="Dobble Logo" class="logo float-left">
+            <img src="img/logo.png" alt="Dobble Logo" class="logo float-sm-left">
             <form>
                    
-                    <div class="form-row align-items-center">
+                    <div class="form-row d-block d-md-flex align-items-center justify-content-end">
 
-                        <div class="col-sm-3 my-1 offset-lg-4">
+                        <div class="col-12 col-sm-3">
 
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -92,22 +97,373 @@
                                             </div><!-- end form-group -->
 
                                             <button type="submit" class="btn btn-success">Post</button>
+
+                                            <div class="float-right">
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn btn-light mr-2 rounded">
+                                                            <i class="fa fa-pencil-alt"></i> Text
+                                                        </button>
+                                                        <button type="button" class="btn btn-light  mr-2 rounded">
+                                                            <i class="fa fa-file-image"></i> Image
+                                                        </button>
+                                                        <button type="button" class="btn btn-light rounded">
+                                                            <i class="fa fa-file-video"></i> Video
+                                                        </button>
+                                                </div><!-- end btn-group -->
+
+                                            </div><!-- end float-right -->
+
                                         </form>
                                     </div><!-- end card-body -->
-
                             </div><!-- end card -->
+
+                            <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center col-sm-2">
+                                                <a href="profile.html" class="post-avatar">
+                                                    <img class="shadow-sm img-thumbnail" src="img/user.png" alt="User profile picture">
+                                                    <div class="text-center">DevUser1</div>
+                                                </a>
+                                                <div class="likes text-center">
+                                                    <i class="fas fa-thumbs-up text-success"></i> 7</div>
+                                            </div><!-- end col-sm-2 -->
+
+                                            <div class="col-sm-10">
+                                                <div class="bubble border rounded mt-3 pt-2 pl-2 pr-2">
+                                                    <div class="pointer">
+                                                        <p class="text-justify mt-sm-0">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                            At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                            nesciunt commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                            dolorum exercitationem, laboriosam ratione, doloribus sit cupiditate.
+                                                        </p>
+                                                    </div><!-- end pointer -->
+
+                                                    <div class="pointer-border">
+
+                                                    </div>
+                                                </div><!-- end bubble -->
+
+                                                <p class="post-actions mt-2">
+                                                    <a href="#">Comment</a> -  <a href="#">Like</a> -  <a href="#">Follow</a>
+                                                    -  <a href="#">Share</a>
+                                                </p>
+
+                                                <div class="comment-form">
+                                                    <form>
+                                                            <div class="form-row align-items-center">
+                                    
+                                                                <div class="col-sm-7 my-1">
+                                                                    <input type="text" class="form-control" placeholder="Enter comment">
+                                                                </div><!-- end col-sm-3 my-1 -->
+                                                                
+                                                                <div class="col-12 col-sm-auto my-1 text-center">
+                                                                    <button type="submit" class="btn btn-success">Add comment</button>
+                                                                </div><!-- end col-auto my-1 -->
+                                        
+                                                            </div><!-- end form-row align-items-center -->
+                                                    </form>
+                                                </div><!-- end comment-form -->
+                                                    
+                                                <div class="comments">
+                                                    <div class="comment mt-3">
+                                                            <a href="#" class="comment-avatar float-left p-2 ml-3 mr-3 mt-1">
+                                                                <img class="img-thumbnail shadow-sm" src="img/user.png" alt="User image">
+                                                            </a>
+                                                            <div class="comment-text border rounded pl-4 pt-2 pr-4">
+                                                                <p class="text-justify">
+                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                        At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                                        nesciunt commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                                        dolorum exercitationem, laboriosam ratione, doloribus sit cupiditate.
+                                                                </p>
+                                                            </div><!-- end comment-text -->
+                                                    </div><!-- end "comment mt-3 -->
+
+                                                    <div class="comment mt-3">
+                                                            <a href="#" class="comment-avatar float-left mr-3 mt-1 p-2 ml-3 mt-1">
+                                                                <img class="img-thumbnail shadow-sm" src="img/user.png" alt="User image">
+                                                            </a>
+                                                                <div class="comment-text border rounded pl-4 pt-2 pr-4 pb-3">
+                                                                    <p class="text-justify last-comment">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                            At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                                            nesciunt commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                                            dolorum exercitationem, laboriosam ratione, doloribus sit cupiditate.
+                                                                    </p>
+                                                                </div><!-- end comment-text --> 
+                                                    </div><!-- end comment -->
+                                                 </div><!-- end comments -->
+
+                                            </div><!-- end col-sm-10 -->
+                                        </div><!-- end row -->
+
+                                    </div><!-- end card-body -->
+                            </div><!-- end card mt-4 -->
+
+                            <!-- SECOND POST -->
+                            <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center col-sm-2">
+                                                <a href="profile.html" class="post-avatar">
+                                                    <img class="shadow-sm img-thumbnail" src="img/user.png" alt="User profile picture">
+                                                    <div class="text-center">DevUser2</div>
+                                                </a>
+                                                <div class="likes text-center">
+                                                    <i class="fas fa-thumbs-up text-success"></i> 13</div>
+                                            </div><!-- end col-sm-2 -->
+
+                                            <div class="col-sm-10">
+                                                <div class="bubble border rounded mt-3 pt-2 pl-2 pr-2">
+                                                    <div class="pointer">
+                                                        <p class="text-justify mt-sm-0">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                            At consectetur n commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                            dolorum exercitationem, laboriosam ratione, doloribus sit cupiditate.
+                                                        </p>
+                                                    </div><!-- end pointer -->
+
+                                                    <div class="pointer-border">
+
+                                                    </div>
+                                                </div><!-- end bubble -->
+
+                                                <p class="post-actions mt-2">
+                                                    <a href="#">Comment</a> -  <a href="#">Like</a> -  <a href="#">Follow</a>
+                                                    -  <a href="#">Share</a>
+                                                </p>
+
+                                                <div class="comment-form">
+                                                    <form>
+                                                            <div class="form-row align-items-center">
+                                    
+                                                                <div class="col-sm-7 my-1">
+                                                                    <input type="text" class="form-control" placeholder="Enter comment">
+                                                                </div><!-- end col-sm-3 my-1 -->
+                                                                
+                                                                <div class="col-12 col-sm-auto my-1 text-center">
+                                                                    <button type="submit" class="btn btn-success">Add comment</button>
+                                                                </div><!-- end col-auto my-1 -->
+                                        
+                                                            </div><!-- end form-row align-items-center -->
+                                                    </form>
+                                                </div><!-- end comment-form -->
+                                                    
+                                                <div class="comments">
+                                                    <div class="comment mt-3">
+                                                            <a href="#" class="comment-avatar float-left mr-3 mt-1 p-2 ml-3">
+                                                                <img class="img-thumbnail shadow-sm" src="img/user.png" alt="User image">
+                                                            </a>
+                                                                <div class="comment-text border rounded pl-4 pt-2 pr-4">
+                                                                    <p class="text-justify">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                            At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                                            nesciunt commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                                            dolorum exercitationem, laboriosam ratione, doloribus sit cupiditate.
+                                                                    </p>
+                                                                </div><!-- end comment-text -->
+                                                    </div><!-- end "comment mt-3 -->
+
+                                                    <div class="comment mt-3">
+                                                            <a href="#" class="comment-avatar float-left mr-3 mt-1 ml-3 p-2">
+                                                                <img class="img-thumbnail shadow-sm" src="img/user.png" alt="User image">
+                                                            </a>
+                                                                <div class="comment-text border rounded pl-4 pb-3 pt-2 pr-4">
+                                                                    <p class="text-justify last-comment">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                            At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                                            ratione, doloribus sit cupiditate.
+                                                                    </p>
+                                                                </div><!-- end comment-text --> 
+                                                    </div><!-- end comment -->
+                                                 </div><!-- end comments -->
+
+                                            </div><!-- end col-sm-10 -->
+                                        </div><!-- end row -->
+
+                                    </div><!-- end card-body -->
+                            </div><!-- end card mt-4 -->
+
+                            <!-- THIRD POST -->
+                            <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 text-center col-sm-2">
+                                                <a href="profile.html" class="post-avatar">
+                                                    <img class="shadow-sm img-thumbnail" src="img/user.png" alt="User profile picture">
+                                                    <div class="text-center">DevUser3</div>
+                                                </a>
+                                                <div class="likes text-center">
+                                                    <i class="fas fa-thumbs-up text-success"></i> 10</div>
+                                            </div><!-- end col-sm-2 -->
+
+                                            <div class="col-sm-10">
+                                                <div class="bubble border rounded pt-2 pl-2 pr-2">
+                                                    <div class="pointer">
+                                                        <p class="text-justify mt-3 mt-sm-0">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                            At consectetur neque corporis unde quas assumenda voluptatibus 
+                                                            nesciunt commodi soluta necessitatibus praesentium quaerat suscipit 
+                                                            doloiosam ratione, doloribus sit cupiditate.
+                                                        </p>
+                                                    </div><!-- end pointer -->
+
+                                                    <div class="pointer-border">
+
+                                                    </div>
+                                                </div><!-- end bubble -->
+
+                                                <p class="post-actions mt-2">
+                                                    <a href="#">Comment</a> -  <a href="#">Like</a> -  <a href="#">Follow</a>
+                                                    -  <a href="#">Share</a>
+                                                </p>
+
+                                                <div class="comment-form">
+                                                    <form>
+                                                            <div class="form-row align-items-center">
+                                    
+                                                                <div class="col-sm-7 my-1">
+                                                                    <input type="text" class="form-control" placeholder="Enter comment">
+                                                                </div><!-- end col-sm-3 my-1 -->
+                                                                
+                                                                <div class="col-12 col-sm-auto my-1 text-center">
+                                                                    <button type="submit" class="btn btn-success">Add comment</button>
+                                                                </div><!-- end col-auto my-1 -->
+                                        
+                                                            </div><!-- end form-row align-items-center -->
+                                                    </form>
+                                                </div><!-- end comment-form -->
+                                                    
+                                                <div class="comments">
+                                                    <div class="comment mt-3">
+                                                            <a href="#" class="comment-avatar float-left mr-3 mt-1 p-2 ml-3">
+                                                                <img class="img-thumbnail shadow-sm" src="img/user.png" alt="User image">
+                                                            </a>
+                                                                <div class="comment-text  border rounded pb-3 pb-md-4 pb-lg-5  pl-4 pt-2 pr-4">
+                                                                    <p class="text-justify last-comment">
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                            At consectetus sit cupiditate.
+                                                                    </p>
+                                                                </div><!-- end comment-text -->
+                                                    </div><!-- end "comment mt-3 -->
+
+                                                 </div><!-- end comments -->
+
+                                            </div><!-- end col-sm-10 -->
+                                        </div><!-- end row -->
+
+                                    </div><!-- end card-body -->
+                            </div><!-- end card mt-4 -->
 
                     </div><!-- end col-md-8 -->
 
                     <div class="col-md-4">
+                        <div class="card friends mt-4">
+                                <div class="card-header h5 bg-color">
+                                    My Friends
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <ul class="mx-auto justify-content-center quit-padding-left">
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
 
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="d-block d-md-inline-block list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+                                        </ul><!-- end list-inline -->
+         
+                                </div><!-- end d-flex -->
+                               
+                                <!-- THIS IS TO ALIGN THE BUTTON IN THE MIDDLE OF THE COLUMN -->
+                                <div class="row">
+                                    <div class="col-9 offset-2 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all friends</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+                                
+                                </div><!-- end card-body -->
+                        </div><!-- end card friends mt-4 -->
+
+                        <div class="card groups mt-4">
+                                <div class="card-header h5 bg-color">Latest Groups</div>
+                                <div class="card-body">
+                                    <!-- IMAGES WILL HAVE INLINE STYLES AS IT DOESNT WORK THROUGH STYLES.CSS -->
+                                    <div class="group-item pb-3 border-bottom">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group One</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div>
+                                  
+                                    <div class="group-item border-bottom pt-3 pb-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Two</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div>
+
+                                    <div class="group-item pt-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Three</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div>
+                                    <!-- TO CENTER BUTTON -->
+                                <div class="row">
+                                    <div class="col-10 offset-2 offset-sm-0 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all Groups</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+
+                                </div>
+                        </div>
                     </div><!-- end col-md-4 -->
 
                 </div><!-- end row -->
-
             </div><!-- end container -->
-
         </section><!-- end section -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <p>Dobble Copyright &copy; 2019, All Rights Reserved.</p>
+            </div>
+        </footer>
 
 
 

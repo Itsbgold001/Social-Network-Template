@@ -5,7 +5,81 @@ header {
     padding-top: 15px;
 }
 
+/* Footer */
+
+footer{
+    background: #f4f4f4;
+    height: 60px;
+    padding-top: 12px;
+    color: #04519b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 7px solid #04519b;
+}
+
 .bg-color{
     background: linear-gradient(#04519b, #044687 60%, #033769);
     color: #fff;
 }
+
+/* BEGINNING OF BUBBLE
+==========================================
+This class is for the bubble on each post comment (small triangle showing on the left of each DevUser)
+ */
+.bubble{ position: relative; }
+
+/* I want to show it on sm and further. The bubble will be hidden on lower viewports (design purposes, it
+looks ugly, let's be honest :) */
+@media (min-width: 576px){
+    .bubble::after{
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent #fff;
+        display: block;
+        width: 0;
+        z-index: 1;
+        margin-top: -15px;
+        left: -15px;
+        top: 50%;
+    }
+    
+    .bubble::before{
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent #ccc;
+        display: block;
+        width: 0;
+        z-index: 0;
+        margin-top: -15px;
+        left: -16px;
+        top: 50%;
+    }
+    
+}
+/*
+    END OF BUBBLE
+*/
+
+/* 
+================================
+*/
+
+  /* Avatar img made smaller */
+.comment-avatar img { width: 50px; }
+
+/* The last comment of each post will have no margin-bottom.
+    By default Bootstrap adds 1rem of margin-bottom, this class just quits it */
+.last-comment { margin-bottom: 0rem; }
+
+/* Change img width in order to put them all inline */
+.friends img { width: 55px; }
+
+
+/* Removing margins to all li with the class list-inline-item */
+.no-margin-right:not(:last-child) { margin-right: 0rem; };
+

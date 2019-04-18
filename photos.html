@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos: Dobble Social Network</title>
+
+    <!-- CDNs -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- LOCAL STYLESHEETs -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/ekko-lightbox.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <img style="width: 350px;" src="img/logo.png" alt="Dobble Logo" class="logo float-md-left">
+            <form>
+                   
+                    <div class="form-row d-block d-md-flex align-items-center">
+
+                        <div class="col-12 col-sm-12 col-md-3 offset-md-3 offset-lg-4 mt-2 mb-3 mt-md-0 mb-md-0">
+                            
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text d-md-none d-lg-block">@</div>
+                                </div><!-- end input-group-prepend -->
+                                <input type="email" class="rounded form-control" placeholder="E-mail">
+                            </div><!-- end input-group -->
+
+                        </div><!-- end col-sm-3 my-1 -->
+
+                      <div class="col-sm-12 col-md-3">
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div><!-- end col-sm-3 my-1 -->
+                      
+                      <div class="col-auto text-center mt-2 mt-sm-3 mt-md-0">
+                        <button type="submit" class="btn btn-success">Log in</button>
+                      </div><!-- end col-auto my-1 -->
+
+                      <div class="col-auto col-sm-6 my-2 offset-md-3 offset-lg-4 pb-2 pb-md-0">
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="rememberMeCheckbox">
+                              <label class="form-check-label" for="rememberMeCheckbox">
+                                Remember me
+                              </label>
+                            </div><!-- end form-check -->
+    
+                          </div><!-- end col-auto my-1 -->
+
+                    </div><!-- end form-row align-items-center -->
+                  </form>
+        </div><!-- end container -->
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Dobble</a>
+
+            <!-- HAMBURGER MENU FOR MOBILE PHONES -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button><!-- end "navbar-toggler -->
+            
+            <div class="collapse navbar-collapse" id="main-menu">
+
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="members.html">Members</a>
+                <a class="nav-item nav-link" href="groups.html">Groups</a>
+                <a class="nav-item nav-link active" href="photos.html">Photos</a>
+                <a class="nav-item nav-link" href="profile.html">Profile</a>
+              </div><!-- end navbar-nav -->
+              
+            </div><!-- end collapse navbar-collapse -->
+        </nav>
+
+        <!-- MAIN SECTION -->
+        <section>
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-8 mt-4">
+                        <h1 class="border-bottom pb-1">Photos</h1>
+                        <div class="row">
+
+                            <div class="col-6 col-md-6 col-lg-9 mx-auto">
+                            <ul class="mt-3 list-unstyled photos gallery-parent list-inline mx-auto justify-content-center">
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample1.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 1" data-footer="This is the first image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample1.jpg" alt="Sample 1"></a> </li>
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample2.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 2" data-footer="This is the second image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample2.jpg" alt="Sample 2"></a> </li>
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample3.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 3" data-footer="This is the third image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample3.jpg" alt="Sample 3"></a> </li>
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample4.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 4" data-footer="This is the fourth image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample4.jpg" alt="Sample 4"></a> </li>
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample5.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 5" data-footer="This is the fifth image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample5.jpg" alt="Sample 5"></a> </li>
+                                <li style="width: 200px;" class="list-inline-item mr-3 mb-3"> <a href="img/sample6.jpg" data-toggle="lightbox" data-always-show-close="true" data-title="Sample 6" data-footer="This is the sixth image" data-gallery="photos-gallery" data-parent=".gallery-parent" data-hover="tooltip" data-placement="top"><img class="img-thumbnail shadow-sm" src="img/sample6.jpg" alt="Sample 6"></a> </li>
+                            </ul><!-- end mt-3 list-unstyled photos gallery-parent list-inline mx-auto justify-content-center -->
+                        </div><!-- end col-6 col-md-6 col-lg-9 mx-auto -->
+                        
+                    </div><!-- end row -->
+                    </div><!-- end col-md-8 -->
+
+                    <div class="col-md-4">
+                        <div class="card friends mt-4">
+                                <div class="card-header h5 bg-color"> My Friends</div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <ul class="mx-auto justify-content-center quit-padding-left">
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="d-block d-md-inline-block list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left mr-2" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item no-margin-right">
+                                                <a href="profile.html" class="thumbnail">
+                                                    <img class="img-thumbnail shadow-sm float-left" src="img/user.png" alt="User image">
+                                                </a>
+                                            </li>
+                                        </ul><!-- end list-inline -->
+         
+                                </div><!-- end d-flex -->
+                               
+                                <!-- THIS IS TO ALIGN THE BUTTON IN THE MIDDLE OF THE COLUMN -->
+                                <div class="row">
+                                    <div class="col-9 offset-2 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all friends</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+                                
+                                </div><!-- end card-body -->
+                        </div><!-- end card friends mt-4 -->
+
+                        <div class="card groups mt-4">
+                                <div class="card-header h5 bg-color">Latest Groups</div>
+                                <div class="card-body">
+                                    <!-- IMAGES WILL HAVE INLINE STYLES AS IT DOESNT WORK THROUGH STYLES.CSS -->
+                                    <div class="group-item pb-3 border-bottom">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group One</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end group-item pb-3 border-bottom -->
+                                  
+                                    <div class="group-item border-bottom pt-3 pb-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Two</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end "group-item border-bottom pt-3 pb-3 -->
+
+                                    <div class="group-item pt-3">
+                                        <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                                        <h4>
+                                            <a href="#">Sample Group Three</a>
+                                        </h4>
+                                        <p>This is a Dobble social network sample group</p>
+                                    </div><!-- end group-item pt-3 -->
+                                    <!-- TO CENTER BUTTON -->
+                                <div class="row">
+                                    <div class="col-10 offset-2 offset-sm-0 text-center">
+                                            <a href="profile.html" class="btn btn-info">View all Groups</a>
+                                    </div><!-- end col-9 offset-2 text-center -->
+                                </div><!-- end row -->
+
+                                </div><!-- end card-body -->
+
+                        </div><!-- end card groups mt-4 -->
+                    </div><!-- end col-md-4 -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <p>Dobble Copyright &copy; 2019, All Rights Reserved.</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/ekko-lightbox.js"></script>
+    
+
+    <!-- LIGHTBOX -->
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+    </script>
+
+    <!-- TOOLTIPS -->
+    <script>
+        $(function () {
+            $('[data-hover="tooltip"]').tooltip()
+        })
+    </script>
+
+
+</body>
+</html>
